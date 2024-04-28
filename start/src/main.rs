@@ -1,3 +1,7 @@
+use crate::module_hello::print_hello;
+
+mod module_hello;
+
 fn func_ex_div_some(x: i32, y: i32) -> Option<i32> {
     let ans = if y == 0 {
         None
@@ -58,4 +62,5 @@ fn main() {
     func_ex_print_some_match(func_ex_div_some(10, 0));
     func_ex_print_result(func_ex_div_result(10, 5));
     func_ex_print_result(func_ex_div_result(10, 0));
+    print_hello();
 }
